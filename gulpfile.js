@@ -17,6 +17,7 @@ const sourcePath = "./wp-content/themes/custom/sources",
 //js files, libraries and plugins
 const jsFiles = [
   sourcePath + "/js/vendors/jquery-1.12.0.min.js",
+  sourcePath + "/js/vendors/smooth-scroll.polyfills.min.js",
   sourcePath + "/js/vendors/wow.min.js",
   sourcePath + "/js/app.js"
 ];

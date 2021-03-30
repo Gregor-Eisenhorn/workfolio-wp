@@ -92,12 +92,14 @@ const globalApp = {
 };
 
 const moduleApp = {
-  sampleModule($thisModule) {
-    //do something triggered on data-is="sampleModule"
-    return true;
+  smoothScroll($thisModule) {
+    let scroll = new SmoothScroll('a[href*="#"]');
   },
-  testModule($thisModule) {
-    console.log("1");
+  navAnimate($thisModule) {
+    nodes.nodeWindow.on("load", function () {
+        $thisModule.toggleClass('is-show');
+      });
+      
   },
 };
 

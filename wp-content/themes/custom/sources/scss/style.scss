@@ -1,178 +1,235 @@
 @import "https://fonts.googleapis.com/css2?family=Russo+One&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
-@import 'sources/scss/vendors/animate.css';
+@import "sources/scss/vendors/animate.css";
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	font-family: 'Russo One';
-	background: #aca591;
+  font-family: "Russo One";
+  background: #aca591;
 }
 nav {
-	background-color: #be3144;
-	width: 100%;
-	font-size: 2rem;
-	padding: 1rem;
-	position: absolute;
-	top: 0;
-	a {
-		text-decoration: none;
-		color: #f0f0f0;
-		margin: auto 1em;
-	}
+  background-color: #be3144;
+  width: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  a {
+    text-decoration: none;
+    color: #f0f0f0;
+    margin: auto 1em;
+  }
 }
 
 nav {
-	position: fixed;
-	.nav-container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-}
+  position: fixed;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: 1s ease;
+  &.is-show {
+    transform: translateY(0);
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .anchors {
+      a {
+        position: relative;
 
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 4px;
+          left: 50%;
+          position: absolute;
+          background: #f0f0f0;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
 
 .logo {
-	img {
-		height: 69px;
-	}
+  img {
+    height: 69px;
+  }
 }
 .about-container {
-	background: seashell;
-	font-size: 1.7em;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  background: seashell;
+  font-size: 1.7em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-.fields {
-	display: flex;
-	margin-top: 50px;
-	p + p {
-		margin-left: 60px;
-	}
-}
-	
+  .fields {
+    display: flex;
+    margin-top: 50px;
+    p + p {
+      margin-left: 60px;
+    }
+  }
 }
 .contact {
-	padding: 300px 0;
-	font-size: 1.7em;
-	text-align: center;
-	background: #0b0a35;
-	color: white;
-	position: relative;
-	h2 {
-		font-weight: 300;
-	}
+  padding: 300px 0;
+  font-size: 1.7em;
+  text-align: center;
+  background: #0b0a35;
+  color: white;
+  position: relative;
+  h2 {
+    font-weight: 300;
+  }
 }
 .projects-container {
-	padding: 5em 0;
-	max-width: 1200px;
-	margin: 0 auto;
-	position: relative;
+  padding-top: 150px;
+  height: 100vh;
+  position: relative;
+  .projects {
+    .tiles-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      a {
+        transform: scale(0.9);
+
+        .project {
+          background: #252c06;
+          overflow: hidden;
+          height: 460px;
+          width: 390px;
+          padding: 10px;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          h3 {
+            display: block;
+            text-align: center;
+            transition: color 0.5s;
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+			left: 0;
+			width: 100%;
+			background: #252c06;
+          }
+          &:hover {
+            h3 {
+              color: #be3144;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 h2 {
-	text-align: center;
-	font-size: 1.9em;
-	text-decoration-line: underline;
+  text-align: center;
+  font-size: 1.9em;
+  text-decoration-line: underline;
 }
-.projects {
-	margin: 5px 0;
-}
-.project {
-	background: #252c06;
-	overflow: hidden;
-	max-width: 350px;
-	margin: 20px 20px;
-	img {
-		width: 100%;
-	}
-}
+
 h3 {
-	padding: 5px;
-	text-align: center;
-	color: white;
-	font-weight: 300;
-	font-size: 1.4rem;
-	padding: 1em 0;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding: 1em 0;
 }
-.tiles-container {
-	max-width: 1200px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-}
+
 .icon {
-	display: inline-block;
-	margin: 0 10px;
-	img {
-		height: 1em;
-	}
-	a {
-		text-decoration: none;
-	}
+  display: inline-block;
+  margin: 0 10px;
+  img {
+    height: 1em;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 .icons {
-	margin: 30px 0;
+  margin: 30px 0;
 }
 footer {
-	padding: 1em 30px;
-	font-size: 1.3em;
-	text-align: right;
-	background: #12122e;
-	color: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	top: 8px;
-	.logo {
-		border: 1px solid white;
-		border-radius: 50%;
-		padding: 5px;
-		background: white;
-	}
+  padding: 1em 30px;
+  font-size: 1.3em;
+  text-align: right;
+  background: #12122e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 8px;
+  .logo {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+  }
 }
 .up {
-	display: inline-block;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	img {
-		height: 70px;
-	}
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  img {
+    height: 70px;
+  }
 }
 main {
-	overflow: hidden;
+  overflow: hidden;
 }
 @media only screen and (max-width: 700px) {
-	.footer {
-		text-align: left;
-	}
-	.icon {
-		display: block;
-		text-align: left;
-	}
-	.icons {
-		position: relative;
-		left: 30%;
-	}
-	.up {
-		display: none;
-	}
-	footer {
-		.logo {
-			display: none;
-		}
-	}
+  .footer {
+    text-align: left;
+  }
+  .fields {
+    flex-direction: column;
+    p {
+      margin-left: 0 !important;
+      margin-top: 5px;
+    }
+  }
+  .icon {
+    display: block;
+    text-align: left;
+  }
+  .icons {
+    position: relative;
+    left: 30%;
+  }
+  .up {
+    display: none;
+  }
+  footer {
+    .logo {
+      display: none;
+    }
+  }
 }
 @media only screen and (max-width: 330px) {
-	.logo {
-		display: none;
-	}
+  .logo {
+    display: none;
+  }
 }

@@ -2,7 +2,7 @@
 
 
 
-<div class='about-container'>
+<div class='about-container' id='anchor-about'>
     <div class="about">
         <h1>
             Hey I am Gregor
@@ -10,28 +10,26 @@
         <p>
             a web developer
         </p>
-        
+
     </div>
-    <div class="fields" data-is="testModule">
-                <p class="wow fadeInDown" data-wow-delay="0.5s">
-                        frontend
-                </p>
-                <p class="wow fadeInDown" data-wow-delay="1s">
-                        fullstack
-                </p>
-                <p class="wow fadeInDown" data-wow-delay="1.5s">
-                        WordPress
-                </p>
-                <p class="wow fadeInDown" data-wow-delay="2s">
-                        1C-Bitrix
-                </p>
-        </div>
+    <div class="fields">
+        <p class="wow fadeInDown" data-wow-delay="0.5s>">
+            frontend
+        </p>
+        <p class="wow fadeInDown" data-wow-delay="1s">
+            fullstack
+        </p>
+        <p class="wow fadeInDown" data-wow-delay="1.5s">
+            WordPress
+        </p>
+        <p class="wow fadeInDown" data-wow-delay="2s">
+            1C-Bitrix
+        </p>
+    </div>
 </div>
 
 
 <div class='projects-container' id='anchor-projects'>
-
-    <div class='up'><a href=""><img src="<?php bloginfo('template_url'); ?>/images/up-icon-png-18.jpg" alt=""></a></div>
 
     <h2>
         These are some of my projects
@@ -40,44 +38,34 @@
     <div class='projects'>
 
         <div class='tiles-container'>
+            <a href="https://mospat.ru/">
+                <div class='project wow fadeIn' data-wow-delay="0.3s">
+                    <img src="/wp-content/themes/custom/images/mospat-tile-image.jpg" alt="MosPat">
+                    <h3>News Website</h3>
+                </div>
+            </a>
             <a href="https://gregor-eisenhorn.github.io/tea-cozy-project/">
-                <div class='project'>
-                    <img src="<?php bloginfo('template_url'); ?>/images/tea-cozy-tile.png" alt="Tea Cozy">
+                <div class='project wow fadeIn' data-wow-delay="0.5s"'>
+                    <img src="/wp-content/themes/custom/images/tea-cozy-tile.png" alt="Tea Cozy">
                     <h3>Corporate Site</h3>
                 </div>
             </a>
             <a href="https://gregor-eisenhorn.github.io/retinorm/">
-                <div class='project'>
-                    <img src="<?php bloginfo('template_url'); ?>/images/retinorm.png" alt="Retinorm">
+                <div class='project wow fadeIn' data-wow-delay="0.7s"'>
+                    <img src="/wp-content/themes/custom/images/retinorm.png" alt="Retinorm">
                     <h3>Drug Brand</h3>
                 </div>
             </a>
-            <a href="">
-                <div class='project'>
-                    <img src="<?php bloginfo('template_url'); ?>/images/calc.png" alt="JavaScrypt Calculator screenshot">
-                    <h3>JavaScrypt Calculator</h3>
+            <a href="https://gregor-eisenhorn.github.io/tea-cozy-project/">
+                <div class='project wow fadeIn' data-wow-delay="0.9s"'>
+                    <img src="/wp-content/themes/custom/images/tea-cozy-tile.png" alt="Tea Cozy">
+                    <h3>Corporate Site</h3>
                 </div>
             </a>
-        </div>
-
-
-        <div class='tiles-container'>
-            <a href="">
-                <div class='project'>
-                    <img src="<?php bloginfo('template_url'); ?>/images/map.jpg" alt="Map Data screenshot">
-                    <h3>Data Across the Globe</h3>
-                </div>
-            </a>
-            <a href="">
-                <div class='project'>
-                    <img src="<?php bloginfo('template_url'); ?>/images/wiki.png" alt="Wikipedia viewer screenshot">
-                    <h3>Wikipedia Viewer</h3>
-                </div>
-            </a>
-            <a href="">
-                <div class='project'>
-                    <img src="<?php bloginfo('template_url'); ?>/images/tic-tac-toe.png" alt="TicTacToe screenshot">
-                    <h3>Tic Tac Toe Game</h3>
+            <a href="https://gregor-eisenhorn.github.io/retinorm/">
+                <div class='project wow fadeIn' data-wow-delay="1.1s"'>
+                    <img src="/wp-content/themes/custom/images/retinorm.png" alt="Retinorm">
+                    <h3>Drug Brand</h3>
                 </div>
             </a>
         </div>
@@ -88,8 +76,6 @@
 
 
 <div class='contact' id='anchor-contact'>
-
-    <div class='up'><a href=""><img src="<?php bloginfo('template_url'); ?>/images/up-icon-png-18.jpg" alt=""></a></div>
 
     <h2>
         Let's work together

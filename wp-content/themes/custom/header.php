@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png" type="image/png">
-    
+
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
 </head>
@@ -20,15 +20,15 @@
 
     <header>
 
-        <nav class="wow slideInDown">
+        <nav data-is="navAnimate">
             <div class='nav-container'>
                 <div class="logo">
                     <a href=""><img src="<?php bloginfo('template_url'); ?>/images/favicon.png" alt=""></a>
                 </div>
-                <div>
-                    <a href="">About</a>
-                    <a href="#anchor-projects">Work</a>
-                    <a href="#anchor-contact">Contact</a>
+                <div class="anchors" data-is="smoothScroll">
+                    <a href="#anchor-about" data-scroll>About</a>
+                    <a href="#anchor-projects" data-scroll>Work</a>
+                    <a href="#anchor-contact" data-scroll>Contact</a>
                 </div>
             </div>
         </nav>
