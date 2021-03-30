@@ -85,25 +85,25 @@
     </p>
 
     <div class='icons'>
-        <div class='icon'>
-            <img src="<?php bloginfo('template_url'); ?>/images/social media icons/facebook.png" alt="Facebook Icon">
-            <a href="">Facebook</a>
+        <div class="icon wow fadeIn" data-wow-delay="0.3s">
+            <img src="/wp-content/themes/custom/images/social media icons/tg.png" alt="Facebook Icon">
+            <a href="https://t.me/sgregor_eisenhorn_ox">Telegram</a>
         </div>
-        <div class='icon'>
+        <div class="icon wow fadeIn" data-wow-delay="0.5s">
             <img src="<?php bloginfo('template_url'); ?>/images/social media icons/git.png" alt="GitHub Icon">
-            <a href="">Github</a>
+            <a href="https://github.com/Gregor-Eisenhorn">Github</a>
         </div>
-        <div class='icon'>
-            <img src="<?php bloginfo('template_url'); ?>/images/social media icons/twitter.png" alt="Twitter Icon">
-            <a href="">Twitter</a>
+        <div class="icon wow fadeIn" data-wow-delay="0.7s">
+            <img src="/wp-content/themes/custom/images/social media icons/vk.png" alt="Twitter Icon">
+            <a href="https://vk.com/id287583803">vKontakte</a>
         </div>
-        <div class='icon'>
+        <div class="icon wow fadeIn" data-wow-delay="0.9s">
             <img src="<?php bloginfo('template_url'); ?>/images/social media icons/email.png" alt="Mail Icon">
-            <a href="">Send a mail</a>
+            <a href="mailto:vladimir.arakelyan73@gmail.com">Send a mail</a>
         </div>
-        <div class='icon'>
+        <div class="icon wow fadeIn" data-wow-delay="1.1s">
             <img src="<?php bloginfo('template_url'); ?>/images/social media icons/phone.png" alt="Phone Icon">
-            <a href="">Call me</a>
+            <a href="tel:89170590343">+7 (917) 059-03-43</a>
         </div>
     </div>
 </div>

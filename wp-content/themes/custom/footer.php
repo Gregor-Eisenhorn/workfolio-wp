@@ -3,12 +3,14 @@
 
 <footer>
     <div class="logo">
-        <a href=""><img src="<?php bloginfo('template_url'); ?>/images/favicon.png" alt=""></a>
+        <a href="#anchor-about"><img src="<?php bloginfo('template_url'); ?>/images/favicon.png" alt=""></a>
     </div>
     <div class="copyright">
-        <p>
-            © Gregor Eisenhorn
-        </p>
+        <a href="#anchor-about">
+            <p>
+                © Gregor Eisenhorn
+            </p>
+        </a>
     </div>
 </footer>
 

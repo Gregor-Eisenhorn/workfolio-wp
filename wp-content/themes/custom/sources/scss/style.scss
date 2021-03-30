@@ -9,6 +9,7 @@
 body {
   font-family: "Russo One";
   background: #aca591;
+  position: relative;
 }
 nav {
   background-color: #be3144;
@@ -85,12 +86,19 @@ nav {
   }
 }
 .contact {
-  padding: 300px 0;
   font-size: 1.7em;
   text-align: center;
   background: #0b0a35;
   color: white;
   position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 10px auto;
+  }
   h2 {
     font-weight: 300;
   }
@@ -128,9 +136,9 @@ nav {
             z-index: 1;
             position: absolute;
             bottom: 0;
-			left: 0;
-			width: 100%;
-			background: #252c06;
+            left: 0;
+            width: 100%;
+            background: #252c06;
           }
           &:hover {
             h3 {
@@ -169,23 +177,40 @@ h3 {
 }
 .icons {
   margin: 30px 0;
+  .icon {
+	  a {
+		  color: rgb(85, 26, 139);
+		  &:visited {
+			  color: rgb(85, 26, 139)
+		  }
+	  }
+  }
 }
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 1em 30px;
   font-size: 1.3em;
   text-align: right;
-  background: #12122e;
+  background: #313144;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: 8px;
+  border-top: 3px solid #403c54;
+
   .logo {
     border: 1px solid white;
     border-radius: 50%;
     padding: 5px;
     background: white;
+  }
+  .copyright {
+	  a {
+		  text-decoration: none;
+		  color: white;
+	  }
   }
 }
 .up {
@@ -211,13 +236,15 @@ main {
       margin-top: 5px;
     }
   }
+  .projects-container {
+    height: auto;
+  }
   .icon {
     display: block;
     text-align: left;
   }
-  .icons {
-    position: relative;
-    left: 30%;
+  .contact {
+    padding-top: 100px;
   }
   .up {
     display: none;
