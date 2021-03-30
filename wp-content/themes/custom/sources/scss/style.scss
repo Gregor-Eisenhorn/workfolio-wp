@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Russo+One&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
-/* index styles */
+@import 'sources/scss/vendors/animate.css';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,21 +23,40 @@ nav {
 		margin: auto 1em;
 	}
 }
-.nav-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+
+nav {
+	position: fixed;
+	.nav-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
+
+
 .logo {
 	img {
 		height: 69px;
 	}
 }
-.header-container {
+.about-container {
 	background: seashell;
-	padding: 15em 0;
 	font-size: 1.7em;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+
+.fields {
+	display: flex;
+	margin-top: 50px;
+	p + p {
+		margin-left: 60px;
+	}
+}
+	
 }
 .contact {
 	padding: 300px 0;

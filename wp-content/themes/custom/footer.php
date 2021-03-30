@@ -7,16 +7,13 @@
     </div>
     <div class="copyright">
         <p>
-            Will be happy to implement interesting projects
-        </p>
-        <p>
             © Gregor Eisenhorn
         </p>
     </div>
 </footer>
 
 <?php wp_footer(); ?>
-
+<script src="/wp-content/themes/custom/app.js"></script>
 </body>
 
 </html>

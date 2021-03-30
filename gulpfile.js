@@ -1,18 +1,25 @@
 //modules
-const gulp = require("gulp"),
+const { series, parallel, watch } = require("gulp"),
+  gulp = require("gulp"),
   sass = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
   plumber = require("gulp-plumber"),
   concat = require("gulp-concat"),
   uglify = require("gulp-uglify"),
   notify = require("gulp-notify");
+  removeUseStrict = require("gulp-remove-use-strict");
+  babel = require("gulp-babel");
 
 //path
 const sourcePath = "./wp-content/themes/custom/sources",
   assetPath = "./wp-content/themes/custom";
 
-//js libraries and plugins
-const jsLibs = [];
+//js files, libraries and plugins
+const jsFiles = [
+  sourcePath + "/js/vendors/jquery-1.12.0.min.js",
+  sourcePath + "/js/vendors/wow.min.js",
+  sourcePath + "/js/app.js"
+];
 
 function style() {
   return gulp
@@ -33,4 +40,28 @@ function style() {
     .pipe(gulp.dest(assetPath));
 }
 
-exports.default = style;
+async function script() {
+  gulp
+    .src(jsFiles)
+    .pipe(plumber())
+    .pipe(concat("./app.js"))
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+        sourceType: 'script'
+      })
+    )
+    .pipe(removeUseStrict())
+    //.pipe(uglify())
+    .pipe(gulp.dest(assetPath));
+}
+
+function dev() {
+  gulp.watch(sourcePath + "/scss/style.scss", series(style));
+  gulp.watch(jsFiles, series(script));
+}
+
+exports.style = style;
+exports.script = script;
+exports.build = series(style, script);
+exports.default = dev;

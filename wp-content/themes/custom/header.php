@@ -10,18 +10,17 @@
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png" type="image/png">
     
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
     <?php wp_head(); ?>
 </head>
 
 
-<body>
+<body id="body">
 
 
 
     <header>
 
-        <nav>
+        <nav class="wow slideInDown">
             <div class='nav-container'>
                 <div class="logo">
                     <a href=""><img src="<?php bloginfo('template_url'); ?>/images/favicon.png" alt=""></a>
@@ -33,15 +32,6 @@
                 </div>
             </div>
         </nav>
-
-        <div class='header-container'>
-            <h1>
-                Hey I am Gregor
-            </h1>
-            <p>
-                a web developer
-            </p>
-        </div>
 
     </header>
 
