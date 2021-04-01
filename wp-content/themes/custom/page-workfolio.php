@@ -56,10 +56,10 @@
                     <h3>Drug Brand</h3>
                 </div>
             </a>
-            <a href="https://gregor-eisenhorn.github.io/tea-cozy-project/">
-                <div class='project wow fadeIn' data-wow-delay="0.9s"'>
-                    <img src="/wp-content/themes/custom/images/tea-cozy-tile.png" alt="Tea Cozy">
-                    <h3>Corporate Site</h3>
+            <a href="https://gregor-eisenhorn.github.io/chore-door//">
+                <div class='project wow fadeIn' data-wow-delay="0.9s">
+                    <img src="/wp-content/themes/custom/images/chore-door.jpg" alt="Tea Cozy">
+                    <h3>Really fun game</h3>
                 </div>
             </a>
             <a href="https://gregor-eisenhorn.github.io/retinorm/">
