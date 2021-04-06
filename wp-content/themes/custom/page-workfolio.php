@@ -62,10 +62,10 @@
                     <h3>Really fun game</h3>
                 </div>
             </a>
-            <a href="https://gregor-eisenhorn.github.io/retinorm/">
+            <a href="<?=home_url( '/gallery/' )?>">
                 <div class='project wow fadeIn' data-wow-delay="1.1s"'>
-                    <img src="/wp-content/themes/custom/images/retinorm.png" alt="Retinorm">
-                    <h3>Drug Brand</h3>
+                    <img src="/wp-content/themes/custom/images/gallery.jfif" alt="Gallery">
+                    <h3>Image Gallery</h3>
                 </div>
             </a>
         </div>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <title><?php wp_title('<', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png" type="image/png">
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -41,7 +41,7 @@
 
 
 <div class='about-container'>
-    test
+gallery
 </div>
 
 
