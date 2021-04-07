@@ -26,8 +26,8 @@
                     <a href=""><img src="<?php bloginfo('template_url'); ?>/images/favicon.png" alt=""></a>
                 </div>
                 <div class="anchors" data-is="smoothScroll">
-                    <a href="<?=get_home_url()?>" data-scroll>Workfolio</a>
-                   
+                    <a href="<?= get_home_url() ?>" data-scroll>Workfolio</a>
+
                 </div>
             </div>
         </nav>
@@ -40,12 +40,15 @@
 
 
 
-<div class='about-container'>
-gallery
-</div>
+        <div class='about-container'>
+            <div class="gallery" data-is="gallery">
+                <input type="file" id="input" multiple>
+
+            </div>
+        </div>
 
 
 
 
 
-<?php get_footer(); ?>
+        <?php get_footer(); ?>

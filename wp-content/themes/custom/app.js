@@ -3875,7 +3875,7 @@ var globalApp = {
     },
     globalEventsActions: {
         sampleGlobalEvent: function sampleGlobalEvent($thisNode, thisValue) {
-            //do something triggered on data-gclicked="sambleGlobalEvent"
+            //do something triggered on data-gclicked="sampleGlobalEvent"
             return true;
         }
     }
@@ -3888,6 +3888,16 @@ var moduleApp = {
         nodes.nodeWindow.on('load', function () {
             $thisModule.toggleClass('is-show');
         });
+    },
+    gallery: function gallery($thisModule) {
+        var input = document.getElementById('input');
+        input.addEventListener('change', handleFiles, false);
+        function handleFiles() {
+            var fileList = this.files;
+            var numFiles = fileList.length;
+            console.log(numFiles);
+            console.log(fileList);
+        }
     }
 };
 document.addEventListener('DOMContentLoaded', function () {

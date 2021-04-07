@@ -61,11 +61,6 @@ nav {
   }
 }
 
-.logo {
-  img {
-    height: 69px;
-  }
-}
 .about-container {
   background: seashell;
   font-size: 1.7em;
@@ -201,9 +196,14 @@ footer {
 
   .logo {
     border: 1px solid white;
-    border-radius: 50%;
+    border-radius: 10%;
     padding: 5px;
     background: white;
+    img {
+      height: 69px;
+      position: relative;
+      top: 2px;
+    }
   }
   .copyright {
     a {

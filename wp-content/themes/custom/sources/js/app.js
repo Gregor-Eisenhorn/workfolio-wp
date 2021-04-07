@@ -85,7 +85,7 @@ const globalApp = {
   },
   globalEventsActions: {
     sampleGlobalEvent($thisNode, thisValue) {
-      //do something triggered on data-gclicked="sambleGlobalEvent"
+      //do something triggered on data-gclicked="sampleGlobalEvent"
       return true;
     },
   },
@@ -97,10 +97,19 @@ const moduleApp = {
   },
   navAnimate($thisModule) {
     nodes.nodeWindow.on("load", function () {
-        $thisModule.toggleClass('is-show');
-      });
-      
+      $thisModule.toggleClass("is-show");
+    });
   },
+  gallery($thisModule) {
+    const input = document.getElementById("input");
+    input.addEventListener("change", handleFiles, false);
+    function handleFiles() {
+      const fileList = this.files;
+      const numFiles = fileList.length;
+      console.log(numFiles);
+      console.log(fileList);
+    }
+  }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
