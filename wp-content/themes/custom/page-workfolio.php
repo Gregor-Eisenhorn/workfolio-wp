@@ -62,6 +62,12 @@
                     <h3>Really fun game</h3>
                 </div>
             </a>
+            <a href="https://gregor-eisenhorn.github.io/number-guesser/">
+                <div class='project wow fadeIn' data-wow-delay="0.9s">
+                    <img src="/wp-content/themes/custom/images/number-guesser.jpg" alt="Number Guesser">
+                    <h3>Another fun game!</h3>
+                </div>
+            </a>
             <a href="<?=home_url( '/gallery/' )?>">
                 <div class='project wow fadeIn' data-wow-delay="1.1s"'>
                     <img src="/wp-content/themes/custom/images/gallery.jfif" alt="Gallery">
