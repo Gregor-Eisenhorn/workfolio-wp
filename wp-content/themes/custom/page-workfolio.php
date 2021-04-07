@@ -68,7 +68,7 @@
                     <h3>Another fun game!</h3>
                 </div>
             </a>
-            <a href="<?=home_url( '/gallery/' )?>">
+            <a href="https://gregor-eisenhorn.github.io/gallery-app/">
                 <div class='project wow fadeIn' data-wow-delay="1.1s"'>
                     <img src="/wp-content/themes/custom/images/gallery.jfif" alt="Gallery">
                     <h3>Image Gallery</h3>
