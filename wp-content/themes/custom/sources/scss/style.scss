@@ -180,6 +180,11 @@ h3 {
     }
   }
 }
+
+.logo img {
+  height: 69px;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -200,7 +205,6 @@ footer {
     padding: 5px;
     background: white;
     img {
-      height: 69px;
       position: relative;
       top: 2px;
     }
