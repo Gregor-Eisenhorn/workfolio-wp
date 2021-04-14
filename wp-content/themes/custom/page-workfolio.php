@@ -44,6 +44,24 @@
                     <h3>News Website</h3>
                 </div>
             </a>
+            <a href="https://gregor-eisenhorn.github.io/gallery-app/">
+                <div class='project wow fadeIn' data-wow-delay="1.1s"'>
+                    <img src="/wp-content/themes/custom/images/gallery.jfif" alt="Gallery">
+                    <h3>Image Gallery</h3>
+                </div>
+            </a>
+            <a href="https://gregor-eisenhorn.github.io/chore-door//">
+                <div class='project wow fadeIn' data-wow-delay="0.9s">
+                    <img src="/wp-content/themes/custom/images/chore-door.jpg" alt="Chore-door">
+                    <h3>Another fun game!</h3>
+                </div>
+            </a>
+            <a href="https://gregor-eisenhorn.github.io/number-guesser/">
+                <div class='project wow fadeIn' data-wow-delay="0.9s">
+                    <img src="/wp-content/themes/custom/images/number-guesser.jpg" alt="Number Guesser">
+                    <h3>Really fun game</h3>
+                </div>
+            </a>
             <a href="https://gregor-eisenhorn.github.io/tea-cozy-project/">
                 <div class='project wow fadeIn' data-wow-delay="0.5s"'>
                     <img src="/wp-content/themes/custom/images/tea-cozy-tile.png" alt="Tea Cozy">
@@ -56,24 +74,8 @@
                     <h3>Drug Brand</h3>
                 </div>
             </a>
-            <a href="https://gregor-eisenhorn.github.io/chore-door//">
-                <div class='project wow fadeIn' data-wow-delay="0.9s">
-                    <img src="/wp-content/themes/custom/images/chore-door.jpg" alt="Tea Cozy">
-                    <h3>Really fun game</h3>
-                </div>
-            </a>
-            <a href="https://gregor-eisenhorn.github.io/number-guesser/">
-                <div class='project wow fadeIn' data-wow-delay="0.9s">
-                    <img src="/wp-content/themes/custom/images/number-guesser.jpg" alt="Number Guesser">
-                    <h3>Another fun game!</h3>
-                </div>
-            </a>
-            <a href="https://gregor-eisenhorn.github.io/gallery-app/">
-                <div class='project wow fadeIn' data-wow-delay="1.1s"'>
-                    <img src="/wp-content/themes/custom/images/gallery.jfif" alt="Gallery">
-                    <h3>Image Gallery</h3>
-                </div>
-            </a>
+            
+            
         </div>
 
     </div>
